@@ -3,64 +3,82 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #1f1f1f; /* Dark background color */
-    color: #fff; /* Light text color */
+    background-color: #1f1f1f;
+    /* Dark background color */
+    color: #fff;
+    /* Light text color */
 }
 
 .container {
     max-width: 1280px;
-    margin: 20px auto 0; /* Adjust the top margin */
-    padding: 40px 60px; /* Adjust the top and bottom padding */
+    margin: 20px auto 0;
+    /* Adjust the top margin */
+    padding: 40px 60px;
+    /* Adjust the top and bottom padding */
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
 
 .biography {
-    max-width: 180px; /* Limit the maximum width to 180px */
+    max-width: 180px;
+    /* Limit the maximum width to 180px */
 }
 
 .biography p {
-    font-size: 9pt; /* Set font size to 9pt */
-    line-height: 1.4; /* Set line height for better readability */
+    font-size: 9pt;
+    /* Set font size to 9pt */
+    line-height: 1.4;
+    /* Set line height for better readability */
 }
 
 .heading {
     width: 100%;
     margin-bottom: 10px;
-    margin-top: 20px; /* Adjust the top margin */
+    margin-top: 20px;
+    /* Adjust the top margin */
     font-size: 24px;
     font-weight: bold;
 }
 
 .heading img {
-    max-width: 180px; /* Maximum width for the profile picture */
-    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    max-width: 180px;
+    /* Maximum width for the profile picture */
+    height: auto;
+    /* Automatically adjust height to maintain aspect ratio */
 }
 
 .rectangle {
-    width: calc(180px); /* Increase width by 30% */
+    width: calc(180px);
+    /* Increase width by 30% */
     height: 720px;
-    background-color: #2f2f2f; /* Darker box background color */
+    background-color: #2f2f2f;
+    /* Darker box background color */
     margin-right: 20px;
     position: relative;
-    overflow: hidden; /* Hide any content that overflows the box */
-    transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1); /* Add transition effect */
+    overflow: hidden;
+    /* Hide any content that overflows the box */
+    transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    /* Add transition effect */
 }
 
 .rectangle:first-child {
-    margin-left: 10px; /* Reduce the left margin of the first box */
+    margin-left: 10px;
+    /* Reduce the left margin of the first box */
 }
 
 .rectangle:hover {
-    transform: scale(1.1); /* Zoom in by 10% when hovering over the box */
+    transform: scale(1.1);
+    /* Zoom in by 10% when hovering over the box */
 }
 
 .rectangle img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Crop the image to fit within the box */
-    object-position: center; /* Center the image within the box */
+    object-fit: cover;
+    /* Crop the image to fit within the box */
+    object-position: center;
+    /* Center the image within the box */
     position: absolute;
     top: 0;
     left: 0;
@@ -82,7 +100,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #2f2f2f; /* Darker popup background color */
+    background-color: #2f2f2f;
+    /* Darker popup background color */
     padding: 20px;
     border-radius: 5px;
 }

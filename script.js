@@ -7,8 +7,8 @@ function openPopup(imageSrc) {
     fullImage.src = imageSrc;
     popup.style.display = "block";
 
-    // Add event listener to close the popup when clicking on the "x" button
-    document.querySelector(".close").addEventListener("click", closePopup);
+    // Add event listener to close the popup when clicking anywhere outside of the image
+    document.addEventListener("click", outsideClickHandler);
 }
 
 // Function to close the popup
@@ -22,8 +22,8 @@ function closePopup() {
 
 // Function to handle clicks outside of the popup
 function outsideClickHandler(event) {
-    var popup = document.getElementById("popup");
-    if (!popup.contains(event.target)) {
+    var popupContent = document.querySelector(".popup-content");
+    if (!popupContent.contains(event.target)) {
         closePopup();
     }
 }
@@ -37,6 +37,3 @@ rectangles.forEach(function (rectangle) {
         openPopup(imageSrc);
     });
 });
-
-// Add event listener to close the popup when clicking outside of the image
-document.addEventListener("click", outsideClickHandler);
