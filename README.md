@@ -4,7 +4,7 @@
 Graphic Design, BFA
 
 ### Work Experience
-Visual Designer @ Micro-Star International Co., Ltd
+Visual Designer @ MSI
 - BTO System Integration
 - MSI US.STORE Branding
 
