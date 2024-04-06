@@ -176,3 +176,39 @@ footer p {
     right: 10px;
     cursor: pointer;
 }
+
+/* Add a breakpoint for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+        /* Allow items to wrap to the next line */
+        text-align: center;
+        /* Center the content horizontally */
+    }
+
+    .rectangle {
+        width: calc(33.33% - 10px);
+        /* Adjust the width for 3 boxes per row and consider margin */
+        margin: 5px;
+        /* Add some margin between gallery items */
+    }
+
+    .rectangle:nth-child(3n+1) {
+        margin-left: 0;
+        /* Remove left margin for the first item in each row */
+    }
+
+    .heading {
+        width: 100%;
+        /* Ensure the heading spans the full width */
+        text-align: center;
+        /* Center the content horizontally */
+    }
+
+    .biography {
+        max-width: 100%;
+        /* Allow biography to take up full width */
+        margin-bottom: 20px;
+        /* Add some bottom margin to the biography */
+    }
+}
