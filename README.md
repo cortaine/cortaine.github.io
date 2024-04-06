@@ -10,4 +10,3 @@ Visual Designer @ MSI
 
 ### Projects
 - Q1 Product Launches
-- Q2 Product Launches
