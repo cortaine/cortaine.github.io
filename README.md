@@ -1,12 +1,13 @@
 # cortaine.github.io
 
 ### Education
-Physics, PhD
+Graphic Design, BFA
 
 ### Work Experience
-Data Scientist @ Telsa Financial Services
-- big impact project 1!
-- big impact project 2!
+Visual Designer @ Micro-Star International Co., Ltd
+- BTO System Integration
+- MSI US.STORE Branding
 
 ### Projects
-EEG Band Discovery
+Q1 Product Launches
+Q2 Product Launches
