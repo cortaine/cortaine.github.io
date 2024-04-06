@@ -9,5 +9,5 @@ Visual Designer @ Micro-Star International Co., Ltd
 - MSI US.STORE Branding
 
 ### Projects
-Q1 Product Launches
-Q2 Product Launches
+- Q1 Product Launches
+- Q2 Product Launches
