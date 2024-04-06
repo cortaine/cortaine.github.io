@@ -12,12 +12,42 @@ body {
 .container {
     max-width: 1280px;
     margin: 20px auto 0;
-    /* Adjust the top margin */
-    padding: 40px 60px;
-    /* Adjust the top and bottom padding */
+    /* Adjust the top margin and center horizontally */
+    padding: 40px 0 0;
+    /* Adjust the top padding */
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+}
+
+
+
+.heading {
+    width: calc(180px + 60px);
+    /* Add the extra margin to the width */
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    padding-right: 60px;
+    /* Add padding to the right */
+}
+
+.heading h3 {
+    font-family: serif;
+    max-width: 180px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+
+.heading img {
+    max-width: 180px;
+    /* Maximum width for the profile picture */
+    height: auto;
+    /* Automatically adjust height to maintain aspect ratio */
 }
 
 .biography {
@@ -30,22 +60,6 @@ body {
     /* Set font size to 9pt */
     line-height: 1.4;
     /* Set line height for better readability */
-}
-
-.heading {
-    width: 100%;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    /* Adjust the top margin */
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.heading img {
-    max-width: 180px;
-    /* Maximum width for the profile picture */
-    height: auto;
-    /* Automatically adjust height to maintain aspect ratio */
 }
 
 .rectangle {
@@ -63,8 +77,8 @@ body {
 }
 
 .rectangle:first-child {
-    margin-left: 10px;
-    /* Reduce the left margin of the first box */
+    margin-left: 20px;
+    /* Adjust the left margin of the first Gallery item */
 }
 
 .rectangle:hover {
@@ -109,6 +123,51 @@ body {
 .popup-content img {
     max-width: 1280px;
     max-height: 720px;
+}
+
+.profile {
+    margin-bottom: 20px;
+    /* Add space at the bottom of the profile */
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    /* Adjust margin as needed */
+    margin-bottom: 20px;
+    /* Add margin at the bottom for spacing */
+    font-size: 12px;
+    /* Adjust font size as needed */
+    color: #666666;
+    /* Dark grey font color */
+}
+
+footer p {
+    font-size: 12px;
+    /* Adjust font size as needed */
+}
+
+
+.footer-icons {
+    text-align: center;
+    max-width: 180px;
+    /* Limit the width of the footer */
+    margin: 0 auto;
+    /* Center the icons horizontally */
+    margin-top: 30px;
+    /* Add space at the top of the icons */
+}
+
+.footer-icons a {
+    display: inline-block;
+    margin: 0 12px;
+    /* Adjust spacing between icons */
+}
+
+.footer-icons img {
+    width: 30px;
+    /* Adjust the size of the icons */
+    height: 30px;
 }
 
 .close {
