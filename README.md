@@ -1,11 +1,14 @@
 # cortaine.github.io
 
 ### Education
-Graphic Design, BFA
+Central Saint Martins
+- Multimedia Design
 
 ### Work Experience
-Visual Designer @ MSI
-- BTO System Integration
+Graphic Designer
+- Visual Development
 
 ### Projects
-- Q1 Product Launches
+- A.G.
+- E.E.
+- B.N.
