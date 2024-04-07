@@ -1,17 +1,26 @@
 'use strict';
 
-// Function to open the popup with full image
 function openPopup(imageSrc) {
     var popup = document.getElementById("popup");
     var fullImage = document.getElementById("fullImage");
+    var popupContent = document.querySelector(".popup-content"); // Ensure you have this class on your popup content div
+
     fullImage.src = imageSrc;
     popup.style.display = "block";
 
     // Add event listener to close the popup when clicking anywhere outside of the image
     document.addEventListener("click", outsideClickHandler);
+
+    // Close the popup when clicking on the popup content as well
+    // Ensure this doesn't interfere with other interactive elements inside your popup
+    popupContent.addEventListener('click', function (event) {
+        event.stopPropagation(); // Important to prevent this click from propagating to the document level
+        closePopup();
+    }, {
+        once: true
+    }); // Option to auto-remove this listener after first invocation
 }
 
-// Function to close the popup
 function closePopup() {
     var popup = document.getElementById("popup");
     popup.style.display = "none";
@@ -20,7 +29,6 @@ function closePopup() {
     document.removeEventListener("click", outsideClickHandler);
 }
 
-// Function to handle clicks outside of the popup
 function outsideClickHandler(event) {
     var popupContent = document.querySelector(".popup-content");
     if (!popupContent.contains(event.target)) {
@@ -28,7 +36,6 @@ function outsideClickHandler(event) {
     }
 }
 
-// Add event listeners to each rectangle for opening popup on click
 var rectangles = document.querySelectorAll('.rectangle');
 rectangles.forEach(function (rectangle) {
     rectangle.addEventListener('click', function (event) {
