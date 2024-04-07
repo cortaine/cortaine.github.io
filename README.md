@@ -2,7 +2,6 @@
 
 ### Education
 Central Saint Martins
-- Multimedia Design
 
 ### Work Experience
 Graphic Designer
