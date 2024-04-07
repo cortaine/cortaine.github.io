@@ -11,13 +11,9 @@ body {
 
 .container {
     max-width: 1280px;
-    margin: 20px auto 0;
-    /* Adjust the top margin and center horizontally */
-    padding: 40px 0 0;
-    /* Adjust the top padding */
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    margin: 60px auto;
+    /* This will center the container horizontally */
 }
 
 .heading {
@@ -61,7 +57,7 @@ body {
     width: calc(180px);
     /* Increase width by 30% */
     height: 720px;
-    background-color: #2f2f2f;
+    background-color: #3F3F3F;
     /* Darker box background color */
     margin-right: 20px;
     position: relative;
@@ -121,11 +117,9 @@ body {
 }
 
 .profile-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    margin: inherit;
+    padding: inherit;
+    width: -100%;
 }
 
 footer {
@@ -179,6 +173,7 @@ footer p {
         /* Allow items to wrap to the next line */
         text-align: center;
         /* Center the content horizontally */
+        padding: 30px
     }
 
     .rectangle {
@@ -195,10 +190,8 @@ footer p {
 
     .profile-container {
         width: 100%;
-        display: flex;
         justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        padding: 30px
     }
 
     .heading {
