@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ツキヨ</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #222;
+            color: #ccc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 360px;
+            width: 90%;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            user-select: none;
+            /* Prevent text selection */
+            -webkit-user-select: none;
+            /* Safari */
+            -moz-user-select: none;
+            /* Firefox */
+            -ms-user-select: none;
+            /* IE 10+ */
+            -webkit-touch-callout: none;
+            /* Disable callout on long press on iOS */
+        }
+
+        h1,
+        p {
+            font-family: 'Noto Sans JP', sans-serif;
+            color: #ccc;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: gold;
+            color: #444;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background-color: #ffd700;
+        }
+
+        #story-container {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            margin-bottom: 20px;
+            user-select: none;
+            /* Prevent text selection */
+            -webkit-user-select: none;
+            /* Safari */
+            -moz-user-select: none;
+            /* Firefox */
+            -ms-user-select: none;
+            /* IE 10+ */
+            -webkit-touch-callout: none;
+            /* Disable callout on long press on iOS */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>ツキヨ</h1>
+        <p id="story-container"></p>
+        <button onclick="generateRandomHaiku()">X</button>
+    </div>
+
+    <script>
+        // Expanded word bank arrays
+        const nouns = ['moon', 'mist', 'shadow', 'whisper', 'night', 'scream', 'fear', 'apocalypse', 'hope', 'embrace', 'silence', 'solitude', 'void', 'echo', 'veil', 'labyrinth', 'abyss'];
+        const verbs = ['dance', 'cry', 'sigh', 'haunt', 'wander', 'fade', 'endure', 'embrace', 'shatter', 'whisper', 'echo', 'conquer', 'descend', 'ascend', 'yearn', 'fade', 'wither'];
+        const adjectives = ['ethereal', 'luminous', 'mystical', 'haunting', 'enigmatic', 'forlorn', 'eerie', 'fearful', 'apocalyptic', 'serene', 'sorrowful', 'melancholic', 'obscure', 'phantom', 'void', 'shadowy', 'pale'];
+        const adverbs = ['silently', 'furtively', 'wistfully', 'hauntingly', 'menacingly', 'vividly', 'faintly', 'desperately', 'elegantly', 'mysteriously', 'forlornly', 'yearningly', 'ethereally'];
+
+        // Function to generate a random haiku
+        function generateRandomHaiku() {
+            // Randomly select words from each array
+            const noun1 = getRandomWord(nouns);
+            const noun2 = getRandomWord(nouns);
+            const noun3 = getRandomWord(nouns);
+            const verb1 = getRandomWord(verbs);
+            const verb2 = getRandomWord(verbs);
+            const adjective1 = getRandomWord(adjectives);
+            const adjective2 = getRandomWord(adjectives);
+            const adverb1 = getRandomWord(adverbs);
+
+            // Construct the haiku with random word combinations
+            const haiku = `${adjective1} ${noun1},\n${adverb1} ${verb1} ${noun2},\n${adjective2} ${noun3}.`;
+
+            // Display the haiku on the page
+            document.getElementById('story-container').innerText = haiku;
+        }
+
+        // Function to get a random word from an array
+        function getRandomWord(array) {
+            const randomIndex = Math.floor(Math.random() * array.length);
+            return array[randomIndex];
+        }
+    </script>
+</body>
+
+</html>
