@@ -135,6 +135,7 @@ footer {
 }
 
 footer p {
+    margin: 90px 0 0;
     font-size: 12px;
     /* Adjust font size as needed */
 }
