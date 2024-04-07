@@ -34,8 +34,8 @@ function outsideClickHandler(event) {
 
 var images = document.querySelectorAll('img');
 
-images.forEach(function(img) {
-    img.addEventListener('contextmenu', function(e) {
+images.forEach(function (img) {
+    img.addEventListener('contextmenu', function (e) {
         e.preventDefault();
     });
 });
