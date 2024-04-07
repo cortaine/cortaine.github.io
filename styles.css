@@ -20,8 +20,6 @@ body {
     justify-content: space-between;
 }
 
-
-
 .heading {
     width: calc(180px + 60px);
     /* Add the extra margin to the width */
@@ -35,13 +33,10 @@ body {
 
 .heading h3 {
     font-family: serif;
-    max-width: 180px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-
-
 
 .heading img {
     max-width: 180px;
@@ -125,9 +120,12 @@ body {
     max-height: 720px;
 }
 
-.profile {
-    margin-bottom: 20px;
-    /* Add space at the bottom of the profile */
+.profile-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 footer {
@@ -147,15 +145,12 @@ footer p {
     /* Adjust font size as needed */
 }
 
-
 .footer-icons {
     text-align: center;
     max-width: 180px;
     /* Limit the width of the footer */
-    margin: 0 auto;
-    /* Center the icons horizontally */
-    margin-top: 30px;
-    /* Add space at the top of the icons */
+    margin: 30px 0;
+    /* Default margin */
 }
 
 .footer-icons a {
@@ -198,6 +193,14 @@ footer p {
         /* Remove left margin for the first item in each row */
     }
 
+    .profile-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .heading {
         width: 100%;
         /* Ensure the heading spans the full width */
@@ -206,9 +209,14 @@ footer p {
     }
 
     .biography {
-        max-width: 100%;
-        /* Allow biography to take up full width */
-        margin-bottom: 20px;
-        /* Add some bottom margin to the biography */
+        max-width: 180px;
+        /* Limit the maximum width to 180px */
+        margin: 0 auto;
+        /* Center the biography horizontally */
+    }
+
+    .footer-icons {
+        margin: 30px auto;
+        /* Adjust margin for mobile */
     }
 }
