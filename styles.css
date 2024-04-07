@@ -7,6 +7,7 @@ body {
     /* Dark background color */
     color: #fff;
     /* Light text color */
+    user-select: none;
 }
 
 .container {
@@ -105,11 +106,14 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #2f2f2f;
+    background-color: #181619;
     /* Darker popup background color */
-    padding: 20px;
-    border-radius: 5px;
+    padding: 6px;
+    border-radius: 0px;
+    /* Disable text selection */
+    user-select: none;
 }
+
 
 .popup-content img {
     max-width: 1280px;
@@ -160,11 +164,10 @@ footer p {
     height: 30px;
 }
 
+/* Remove the close symbol */
 .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
+    display: none;
+    /* Hide the close symbol */
 }
 
 /* Add a breakpoint for screens smaller than 768px */
